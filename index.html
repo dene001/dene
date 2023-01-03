@@ -2,11 +2,18 @@
 <head>
 	<title>360 Degree View</title>
 	
-	<script src="https://rawgit.com/aframevr/aframe/b813db0614ac2b518e547105e810b5b6eccfe1c8/dist/aframe.min.js"></script>
-</head>
-<body>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js"></script>
 
+	</head>
+<body>
 	<a-scene>
+		<img id="panorama" src="1.jpg"/>
+		<a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+	</a-scene>
+	
+	<script>
+
+		/*<a-scene>
 		<a-sphere color="#F44336" radius="1" position="0 2 0"></a-sphere>
 	</a-scene>
 	<a-scene>
@@ -20,17 +27,11 @@
 	  <a-sky></a-sky>
 	  <a-sphere color="#F44336" radius="1" position="-4 2 0" set-sky="1.jpg"></a-sphere>
 	  <a-sphere color="#FFEB3B” radius="1" position="4 2 0" set-sky="1.jpg"></a-sphere>
-	<script>
-
-		/*<a-scene>
-			<img id="panorama" src="1.jpg"/>
-			<a-sky src="#panorama" rotation="0 -90 0"></a-sky>
-		</a-scene>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.min.js">
+		
 	*/
 	//<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.2.0/aframe.js">
 
-
+/*
 		AFRAME.registerComponent('set-sky', {
 		  schema: {default: ''},
 		  init() {
@@ -48,7 +49,7 @@
 				sky.setAttribute('src', this.data);
 			  });
 			}
-		  });
+		  });*/
 	</script>
 </body>
 </html>
