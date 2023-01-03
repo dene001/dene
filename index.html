@@ -6,12 +6,12 @@
 
 	</head>
 <body>
-		 <a-scene>
-    <a-box id="redBox" class="clickable" color="red"></a-box>
-    <a-sphere class="clickable" color="blue"></a-sphere>
-    <a-box color="green"></a-box>
-    <a-entity light="type: ambient"></a-entity>
-    <a-entity light="type: directional"></a-entity>
-  </a-scene>
+		<a-camera position="0 2 4">
+			<a-cursor color="#4CC3D9" fuse="true" timeout="10"></a-cursor>
+		</a-camera>
+		<a-scene>
+			<img id="panorama" src="1.jpg"/>
+			<a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+		</a-scene>
 </body>
 </html>
